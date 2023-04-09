@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="nhập hệ số a" id="hesoa">
+<input placeholder="nhập hằng số b" id="hangsob">
+
+<button onclick="Timnghiem()">Nghiem phuong trinh la: </button>
+
+<script>
+    function Timnghiem() {
+    let inputhesoa = document.getElementById("hesoa");
+    let inputhangsob = document.getElementById("hangsob");
+
+    let a = inputhesoa.value
+    let b = inputhangsob.value
+
+
+    if (a != 0) {
+        let x = -b / a;
+        alert("Phuong trinh co nghiem la: " + x);
+    } else if (b == 0) {
+        alert("Phuong trinh vo so nghiem");
+    } else {
+        alert("Phuong trinh vo nghiem")
+    }
+
+}
+</script>
+
+</body>
+</html>

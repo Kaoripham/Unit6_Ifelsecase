@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh gia hoc luc</title>
+</head>
+<body>
+
+<input placeholder="Diem trung binh" id="Diem">
+
+<button onclick="Xeploai()">Xep loai:</button>
+
+<script>
+    function Xeploai() {
+        let Diemtrungbinh = document.getElementById("Diem");
+        let a = Diemtrungbinh.value
+
+        if (a >= 8) {
+            alert("Xep loai Gioi");
+        } else if (a >= 6.5) {
+            alert("Xep loai Kha");
+        } else if (a >= 5) {
+            alert("Xep loai TB");
+        } else {
+            alert("Xep loai Kem");
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
